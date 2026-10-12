@@ -133,7 +133,7 @@ def mostrar_tarefas(lista):
     - lista: list -> As tarefas que serão exibidas
     '''
     if not lista:
-        print('Nenhuma tarefa encontrada.')
+        print('Nenhuma Tarefa Encontrada.')
         return
  
     print(f'{"ID":<5} | {"Nome":<20} | {"Descrição":<50} | {"Vencimento":<12} | Status')
@@ -161,7 +161,7 @@ def cadastrar_nova_tarefa():
         retornar_menu()
         return
 
-    descricao = input('Digite a Descrição da nova tarefa: ').strip()
+    descricao = input('Digite a Descrição da Nova Tarefa: ').strip()
 
     if not descricao:
             print('A Descrição não pode ficar vazia.')
@@ -175,7 +175,7 @@ def cadastrar_nova_tarefa():
     Tarefas.cadastrar_tarefa(tarefas, nome_tarefa, descricao, vencimento, status)
     Persistencia.salvar_tarefas(tarefas)
 
-    print('\nTarefa cadastrada com sucesso!')
+    print('\nTarefa Cadastrada com Sucesso!')
     retornar_menu()
  
  
@@ -194,7 +194,7 @@ def listar_tarefas():
     print('2. Status')
     print('3. Data de Vencimento')
 
-    opcao = input('\nEscolha uma opção: ').strip()
+    opcao = input('\nEscolha uma Opção: ').strip()
 
     status = None
     vencimento = None

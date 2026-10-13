@@ -1,6 +1,6 @@
 '''Tarefas.py - Lógica do sistema (as "regras" do gerenciador de tarefas).
 
-Este arquivo NÃO conversa com o usuário (não usa input nem menus). Ele somente realiza a exibição das operações com as tarefas:
+Este arquivo NÃO conversa com o usuário (não usa input nem menus). Ele somente realiza as operações com as tarefas:
   - Validar dados (Data e Status)
   - Cadastrar, Buscar, Listar, Atualizar e Remover tarefas
 
@@ -153,7 +153,7 @@ def atualizar_tarefa(lista, id_tarefa, nome=None, descricao=None, vencimento=Non
         print('Data Inválida! Use o formato DD/MM/AAAA.')
         return False
     if status is not None and not validar_status(status):
-        print('Status Inválido! Use um dos seguintes: Pendente, Em andamento, Concluída.')
+        print('Status Inválido! Use um dos seguintes: Pendente, Em Andamento, Concluída.')
         return False
 
     if nome:

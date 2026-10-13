@@ -26,7 +26,7 @@ def carregar_tarefas(arquivo=ARQUIVO):
     '''Realiza a leitura das tarefas salvas no arquivo.
     
     Input:
-    - arquivo: str -> Nome do arquivo (se não for informado, usa tarefas.json)
+    - arquivo: str -> Nome do arquivo (se não for informado, usa tarefas_cadastradas.json)
 
     Output:
     - list -> As tarefas salvas, ou uma lista vazia [] se o arquivo ainda não existe ou se não puder ser lido

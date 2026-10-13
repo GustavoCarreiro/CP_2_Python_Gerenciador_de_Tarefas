@@ -1,6 +1,6 @@
 '''Interface.py - Interface com o usuário.
 
-Este arquivo é o "painel de controle" do sistema: Mostra o logotipo e os menus, recebe o que o usuário digita e exibi as funções dos outros dois arquivos:
+Este arquivo é o "painel de controle" do sistema: Mostra o logotipo e os menus, recebe o que o usuário digita e exibe as funções dos outros dois arquivos:
   - Tarefas.py -> Lógica (cadastrar, listar, atualizar, remover)
   - Persistencia.py -> Registrar e fazer a leitura das tarefas no arquivo tarefas_cadastradas.json
 '''
@@ -137,7 +137,7 @@ def mostrar_tarefas(lista):
         return
  
     print(f'{"ID":<5} | {"Nome":<20} | {"Descrição":<50} | {"Vencimento":<12} | Status')
-    print('-' * 90)
+    print('-' * 110)
  
     for t in lista:
         print(f'{t["id"]:<5} | {t.get("nome", ""):<20} | {t["descricao"]:<50} | {t["vencimento"]:<12} | {t["status"]}')
@@ -279,7 +279,7 @@ def remover_tarefa():
 
 
 def escolher_opcao():
-    '''Realizada a opção digitada no menu e exibi a opção escolhida.
+    '''Realizada a leitura da opção digitada do menu e exibe a opção escolhida.
     
     Input:
     - A opção digitada pelo usuário
